@@ -1,0 +1,128 @@
+.header {
+  min-height: 100vh;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-image: url(mainPage.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.header-top {
+  display: flex;
+  width: 100%;
+  height: 110px;
+}
+
+.header-top_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+.header-logo {
+  max-width: 100%;
+  height: 180px;
+  border-radius: 80px;
+  margin-top: -40px;
+}
+
+.header-top_navbar {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.header-top_seperator {
+  width: 100%;
+  border: none;
+  height: 2px;
+  margin-top: 2px;
+  background-color: black;
+}
+
+.header-bottom {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.header-bottom_email {
+  margin-right: 55px;
+}
+
+.header-bottom_phone {
+  margin-right: 65px;
+}
+
+.header-bottom_bag {
+  position: absolute;
+  display: flex;
+}
+
+.header-bottom_bag-icon {
+  position: relative;
+  display: flex;
+  left: -5px;
+  width: 30px;
+  height: 30px;
+}
+
+.header-bottom_bag-count {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: RobotiThin;
+  right: 0px;
+  top: -5px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+}
+
+nav {
+  display: flex;
+  padding: 0% 4%;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-top_navigation {
+  display: flex;
+  flex: 1;
+  text-align: right;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 55px;
+}
+.header-top_navigation ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.header-top_navigation ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
+.header-top_navigation ul li::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: #8dcaff;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.header-top_navigation ul li:hover::after {
+  width: 110%;
+}
